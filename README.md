@@ -1,8 +1,8 @@
-Các bước tạo một server backend với nodejs:\\
-B1: tạo một folder dự án\\
-B2: chạy lệnh npm init để khởi tạo dự án với file package.json\\
-B3: chạy lệnh npm install express --save để cài môi trường làm việc với express\\
-B4: gán câu lệnh dưới đây vào file js chính để tiến hành câu lệnh hello world đầu tiên cũng như kiểm tra project đang hoạt động ổn định !\\
+Các bước tạo một server backend với nodejs:
+B1: tạo một folder dự án
+B2: chạy lệnh npm init để khởi tạo dự án với file package.json
+B3: chạy lệnh npm install express --save để cài môi trường làm việc với express
+B4: gán câu lệnh dưới đây vào file js chính để tiến hành câu lệnh hello world đầu tiên cũng như kiểm tra project đang hoạt động ổn định !
 
 const express = require('express')
 const app = express()
@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
-app.listen(port, () => {\\
+app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
 
