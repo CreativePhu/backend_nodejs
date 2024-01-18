@@ -8,11 +8,13 @@ B3: chạy lệnh npm install express --save để cài môi trường làm vi�
 
 B4: gán câu lệnh dưới đây vào file js chính để tiến hành câu lệnh hello world đầu tiên cũng như kiểm tra project đang hoạt động ổn định !
 
+
 const express = require('express')
 
 const app = express()
 
 const port = 3000
+
 
 app.get('/', (req, res) => {
 
@@ -20,9 +22,11 @@ app.get('/', (req, res) => {
   
 })
 
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
+
 
 B5: tiến hành chạy câu lệnh **npm i ejs** để cài template engines (ejs)
 
@@ -30,11 +34,13 @@ B6: thêm các câu lện dưới đây vào file js chính để cấu hình ch
 
 với path là một thư viện giúp lấy các đường dẫn bắt đầu từ thư mục chứa file đang đứng !
 
+
 const path = require('path')
 
 app.set('views', path.join(__dirname, "views"));
 
 app.set('view engine', 'ejs');
+
 
 sau đó ta có thể dùng câu lệnh: (lưu ý phải tạo file sample.ejs lưu trong thư mục views đã khai báo ở bước 6)
 
