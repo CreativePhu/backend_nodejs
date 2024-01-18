@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
 })
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+  console.log(Example app listening on port ${port})
 })
 
 B5: tiến hành chạy câu lệnh **npm i ejs** để cài template engines (ejs)
